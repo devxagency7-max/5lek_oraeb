@@ -2,403 +2,257 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khaleek Areb - Compliance & Legal</title>
-    <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="Khaleek Areb is Egypt's premier student housing and real estate platform. View our compliance details, refund policies, and terms of service.">
-    <meta name="keywords"
-        content="student housing Egypt, real estate Cairo, Khaleek Areb, property discovery, rental apartments">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khaleek Areb - Compliance & Legal</title>
 
-    <!-- Google Fonts: Cairo -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+<meta name="description"
+content="Khaleek Areb is Egypt's student housing platform. View our refund policy, service delivery policy, terms and privacy details.">
 
-    <style>
-        /* Design System Variables from JSON */
-        :root {
-            /* Palette */
-            --primary-main: #0D9488;
-            --primary-light: #2DD4BF;
-            --primary-dark: #0F766E;
-            --primary-gradient: linear-gradient(90deg, #10B981 0%, #059669 100%);
-            --secondary-main: #F59E0B;
-            --secondary-light: #FEF3C7;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-            --success: #10B981;
-            --danger: #EF4444;
-            --warning: #FBBF24;
-            --info: #3B82F6;
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
 
-            --neutral-bg: #F3F4F6;
-            --neutral-surface: #FFFFFF;
-            --text-primary: #1F2937;
-            --text-secondary: #6B7280;
-            --border: #E5E7EB;
-            --divider: #F3F4F6;
+<style>
 
-            /* Typography */
-            --font-family: 'Cairo', sans-serif;
-            --weight-regular: 400;
-            --weight-medium: 500;
-            --weight-bold: 700;
+body{
+font-family:'Cairo',sans-serif;
+background:#f3f4f6;
+margin:0;
+padding:0;
+color:#1f2937;
+}
 
-            --size-xs: 12px;
-            --size-sm: 14px;
-            --size-md: 16px;
-            --size-lg: 18px;
-            --size-xl: 24px;
-            --size-xxl: 32px;
+.container{
+max-width:600px;
+margin:auto;
+padding:20px;
+}
 
-            /* Shapes */
-            --radius-sm: 8px;
-            --radius-md: 12px;
-            --radius-lg: 20px;
-            --radius-full: 9999px;
+.hero{
+background:linear-gradient(90deg,#10B981,#059669);
+color:white;
+text-align:center;
+padding:60px 20px 40px;
+border-radius:0 0 20px 20px;
+}
 
-            /* Shadows */
-            --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            --shadow-floating: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
-            --btn-shadow: 0 4px 6px rgba(16, 185, 129, 0.3);
-        }
+.hero h1{
+margin:0;
+font-size:32px;
+}
 
-        /* Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
-        }
+.hero p{
+margin-top:6px;
+opacity:.9;
+}
 
-        body {
-            font-family: var(--font-family);
-            background-color: var(--neutral-bg);
-            color: var(--text-primary);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+.section-title{
+margin-top:30px;
+margin-bottom:10px;
+color:#0f766e;
+font-size:22px;
+font-weight:bold;
+}
 
-        /* Utility Classes */
-        .container {
-            width: 100%;
-            max-width: 600px;
-            /* Adapted mobile-app feel on web */
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+.card{
+background:white;
+border-radius:12px;
+padding:16px;
+margin-bottom:16px;
+box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
 
-        h1,
-        h2,
-        h3 {
-            font-weight: var(--weight-bold);
-        }
+.policy-text{
+color:#6b7280;
+font-size:15px;
+line-height:1.6;
+}
 
-        /* Hero Section */
-        .hero {
-            background: var(--primary-gradient);
-            color: var(--neutral-surface);
-            padding: 60px 20px 40px;
-            text-align: center;
-            border-radius: 0 0 50% 50% / 0 0 20px 20px;
-            /* From custom_header_curve */
-            position: relative;
-            z-index: 1;
-        }
+.contact-item{
+margin-bottom:8px;
+font-weight:500;
+}
 
-        .hero h1 {
-            font-size: var(--size-xxl);
-            margin-bottom: 8px;
-            letter-spacing: -0.5px;
-        }
+a{
+color:#0D9488;
+text-decoration:none;
+}
 
-        .hero p {
-            font-size: var(--size-lg);
-            font-weight: var(--weight-medium);
-            opacity: 0.9;
-        }
+footer{
+text-align:center;
+padding:30px;
+font-size:13px;
+color:#6b7280;
+margin-top:40px;
+border-top:1px solid #eee;
+}
 
-        /* Section Styling */
-        section {
-            padding: 32px 0;
-        }
+</style>
 
-        .section-title {
-            font-size: var(--size-xl);
-            color: var(--primary-dark);
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .section-title::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: var(--border);
-        }
-
-        /* Cards - listing_card style from JSON */
-        .card {
-            background: var(--neutral-surface);
-            border-radius: 16px;
-            /* From listing_card border_radius */
-            padding: 16px;
-            /* Adjusted for better content layout than flat 10px */
-            box-shadow: var(--shadow-soft);
-            margin-bottom: 20px;
-            transition: transform 0.2s ease;
-        }
-
-        .card:active {
-            transform: scale(0.98);
-        }
-
-        /* Profile Stats Card Style for About/Hero overlapping effect */
-        .overlap-card {
-            background: var(--neutral-surface);
-            border-radius: 16px;
-            padding: 24px;
-            margin-top: -40px;
-            /* From profile_stats_card margin_top */
-            box-shadow: var(--shadow-floating);
-            /* From profile_stats_card box_shadow */
-            position: relative;
-            z-index: 2;
-            text-align: center;
-        }
-
-        /* Service Cards - Menu Item Style */
-        .menu-item {
-            display: flex;
-            align-items: center;
-            padding: 16px;
-            background: var(--neutral-surface);
-            border-radius: 12px;
-            /* From menu_item_card border_radius */
-            margin-bottom: 12px;
-            box-shadow: var(--shadow-soft);
-        }
-
-        .menu-item-icon {
-            width: 40px;
-            height: 40px;
-            background: rgba(16, 185, 129, 0.1);
-            /* From menu_item_card icon_bg */
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 16px;
-            color: var(--primary-main);
-            font-weight: bold;
-        }
-
-        /* Buttons - primary_action style */
-        .btn-primary {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--primary-gradient);
-            color: var(--neutral-surface);
-            border-radius: 20px;
-            /* From primary_action border_radius */
-            height: 48px;
-            width: 100%;
-            border: none;
-            font-family: var(--font-family);
-            font-size: var(--size-md);
-            font-weight: var(--weight-bold);
-            cursor: pointer;
-            box-shadow: var(--btn-shadow);
-            text-decoration: none;
-            margin-top: 20px;
-        }
-
-        .btn-primary:hover {
-            opacity: 0.9;
-        }
-
-        /* Policies Content */
-        .policy-text {
-            color: var(--text-secondary);
-            font-size: var(--size-md);
-            margin-bottom: 12px;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: var(--text-primary);
-            font-weight: var(--weight-medium);
-            font-size: var(--size-md);
-        }
-
-        /* Footer */
-        footer {
-            padding: 40px 20px;
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: var(--size-sm);
-            border-top: 1px solid var(--border);
-            margin-top: 40px;
-            background: var(--neutral-surface);
-        }
-
-        /* Responsive */
-        @media (min-width: 601px) {
-            body {
-                background-color: #e2e8f0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                min-height: 100vh;
-                padding: 40px 0;
-            }
-
-            .main-wrapper {
-                max-width: 450px;
-                background-color: var(--neutral-bg);
-                border-radius: 30px;
-                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-                overflow: hidden;
-                border: 8px solid #1F2937;
-                position: relative;
-            }
-
-            /* Mock phone notch */
-            .main-wrapper::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 150px;
-                height: 25px;
-                background: #1F2937;
-                border-radius: 0 0 15px 15px;
-                z-index: 10;
-            }
-        }
-
-        /* RTL/Arabic styling for Cairo font */
-        [dir="rtl"] {
-            text-align: right;
-        }
-    </style>
 </head>
 
 <body>
 
-    <div class="main-wrapper">
-        <!-- Hero Section -->
-        <header class="hero">
-            <h1 id="hero-title">Khaleek Areb</h1>
-            <p id="hero-subtitle">Student Housing & Real Estate Platform</p>
-        </header>
+<header class="hero">
+<h1>Khaleek Areb</h1>
+<p>Student Housing & Real Estate Platform</p>
+</header>
 
-        <div class="container" style="margin-top: -20px;">
-            <!-- About Us -->
-            <section id="about" class="overlap-card">
-                <h2 class="section-title">About Us</h2>
-                <p class="policy-text">
-                    Khaleek Areb is a mobile application that helps university students find nearby accommodation and
-                    rental properties easily in Egypt.
-                </p>
-            </section>
+<div class="container">
 
-            <!-- Services -->
-            <section id="services">
-                <h2 class="section-title">Our Services</h2>
-                <div class="menu-item">
-                    <div class="menu-item-icon">1</div>
-                    <div class="menu-text">Student housing listings</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-icon">2</div>
-                    <div class="menu-text">Rental apartments</div>
-                </div>
-                <div class="menu-item">
-                    <div class="menu-item-icon">3</div>
-                    <div class="menu-text">Property discovery near universities</div>
-                </div>
-            </section>
+<section>
 
-            <!-- Policies in Cards -->
-            <section id="policies">
-                <div class="card">
-                    <h2 class="section-title" style="font-size: var(--size-lg);">Refund & Exchange Policy</h2>
-                    <p class="policy-text">Customers can request a refund within 7 days if the service has not been
-                        delivered.</p>
-                </div>
+<h2 class="section-title">About Us</h2>
 
-                <div class="card">
-                    <h2 class="section-title" style="font-size: var(--size-lg);">Shipping & Duration Policy</h2>
-                    <p class="policy-text">Services are activated within 24 hours after successful payment.</p>
-                </div>
+<div class="card">
 
-                <div class="card">
-                    <h2 class="section-title" style="font-size: var(--size-lg);">Terms & Conditions</h2>
-                    <p class="policy-text">By using this application, you agree to all terms and conditions. Khaleek
-                        Areb reserves the right to update policies at any time.</p>
-                </div>
+<p class="policy-text">
+Khaleek Areb is a digital platform that helps university students and individuals find nearby accommodation and rental properties easily across Egypt.
+</p>
 
-                <div class="card">
-                    <h2 class="section-title" style="font-size: var(--size-lg);">Privacy Policy</h2>
-                    <p class="policy-text">We respect user privacy and do not share personal information with any third
-                        party.</p>
-                </div>
-            </section>
+</div>
 
-            <!-- Contact Us -->
-            <section id="contact">
-                <h2 class="section-title">Contact Us</h2>
-                <div class="card" style="padding: 10px;"> <!-- Matching JSON listing_card padding -->
-                    <div class="contact-info" style="padding: 10px;">
-                        <div class="contact-item">
-                            <span>Phone:</span>
-                            <a href="tel:01026064819"
-                                style="color: var(--primary-main); text-decoration: none;">01026064819</a>
-                        </div>
-                        <div class="contact-item">
-                            <span>Email:</span>
-                            <a href="mailto:devx.agency7@gmail.com"
-                                style="color: var(--primary-main); text-decoration: none;">devx.agency7@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+</section>
 
-            <!-- Address -->
-            <section id="address">
-                <h2 class="section-title">Address</h2>
-                <div class="card" style="padding: 10px;">
-                    <div class="contact-info" style="padding: 10px;">
-                        <div class="contact-item">
-                            <span>Cairo, Egypt</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+<section>
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2026 Khaleek Areb. All rights reserved.</p>
-            <p style="margin-top: 8px; font-size: 10px; opacity: 0.6;">Compliance & Verification Portal</p>
-        </footer>
-    </div>
+<h2 class="section-title">Our Services</h2>
+
+<div class="card">
+<p class="policy-text">• Student housing listings</p>
+<p class="policy-text">• Rental apartments discovery</p>
+<p class="policy-text">• Properties near universities</p>
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Refund Policy</h2>
+
+<div class="card">
+
+<p class="policy-text">
+
+Customers may request a refund within 7 days if the paid service has not been delivered or activated.
+
+Refund requests are reviewed by our support team.
+
+If the refund request is approved, the amount will be returned to the original payment method within 3–7 business days.
+
+Refunds are not applicable if the service has already been delivered, activated, or used.
+
+For refund requests please contact our support team via email.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Service Delivery Policy</h2>
+
+<div class="card">
+
+<p class="policy-text">
+
+All services provided through the Khaleek Areb platform are digital services.
+
+Once payment is successfully completed, the requested service will be activated within 24 hours.
+
+If the service is not activated within this period, users can contact our support team.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Terms & Conditions</h2>
+
+<div class="card">
+
+<p class="policy-text">
+
+By using the Khaleek Areb application or website, you agree to comply with all applicable terms and policies.
+
+The platform provides property discovery and housing listing services for students and individuals searching for accommodation in Egypt.
+
+Khaleek Areb reserves the right to update or modify these terms at any time to improve services or comply with legal requirements.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Privacy Policy</h2>
+
+<div class="card">
+
+<p class="policy-text">
+
+Khaleek Areb respects user privacy and is committed to protecting personal information.
+
+User data is only collected to improve the service and provide a better housing discovery experience.
+
+We do not sell or share personal data with third parties except when required for service operation or legal compliance.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="card">
+
+<div class="contact-item">
+Phone:
+<a href="tel:01026064819">01026064819</a>
+</div>
+
+<div class="contact-item">
+Email:
+<a href="mailto:devx.agency7@gmail.com">devx.agency7@gmail.com</a>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Address</h2>
+
+<div class="card">
+
+<p class="policy-text">
+Cairo, Egypt
+</p>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+
+<p>© 2026 Khaleek Areb. All rights reserved.</p>
+
+</footer>
 
 </body>
-
 </html>
